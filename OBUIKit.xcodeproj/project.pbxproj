@@ -15,7 +15,7 @@
 		372E42A91C15839800FBB3E7 /* UIFont+OBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42A21C15839800FBB3E7 /* UIFont+OBExtend.m */; };
 		372E42AA1C15839800FBB3E7 /* UIView+OBExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42A31C15839800FBB3E7 /* UIView+OBExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		372E42AB1C15839800FBB3E7 /* UIView+OBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42A41C15839800FBB3E7 /* UIView+OBExtend.m */; };
-		372E42B11C15849900FBB3E7 /* UIView+OBToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42AF1C15849900FBB3E7 /* UIView+OBToast.h */; };
+		372E42B11C15849900FBB3E7 /* UIView+OBToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42AF1C15849900FBB3E7 /* UIView+OBToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		372E42B21C15849900FBB3E7 /* UIView+OBToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42B01C15849900FBB3E7 /* UIView+OBToast.m */; };
 		372E42B41C1584DA00FBB3E7 /* OBDebugMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42B31C1584DA00FBB3E7 /* OBDebugMacro.h */; };
 		372E42B61C1584FC00FBB3E7 /* OBUIKit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 372E42B51C1584FC00FBB3E7 /* OBUIKit-Prefix.pch */; };
@@ -26,7 +26,7 @@
 		372E42C21C15859F00FBB3E7 /* RBBLinearInterpolation.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42BC1C15859F00FBB3E7 /* RBBLinearInterpolation.h */; };
 		372E42C31C15859F00FBB3E7 /* RBBLinearInterpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42BD1C15859F00FBB3E7 /* RBBLinearInterpolation.m */; };
 		372E42C51C1585D200FBB3E7 /* OBUIMoudle.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42C41C1585D200FBB3E7 /* OBUIMoudle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		372E42CD1C1587B100FBB3E7 /* OBAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42CB1C1587B100FBB3E7 /* OBAlert.h */; };
+		372E42CD1C1587B100FBB3E7 /* OBAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42CB1C1587B100FBB3E7 /* OBAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		372E42CE1C1587B100FBB3E7 /* OBAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42CC1C1587B100FBB3E7 /* OBAlert.m */; };
 /* End PBXBuildFile section */
 
@@ -371,7 +371,9 @@
 				GCC_PREFIX_HEADER = "${PROJECT_NAME}/${PROJECT_NAME}-Prefix.pch";
 				INFOPLIST_FILE = "${PROJECT_NAME}/${PROJECT_NAME}-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oborn.OBUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -389,7 +391,9 @@
 				GCC_PREFIX_HEADER = "${PROJECT_NAME}/${PROJECT_NAME}-Prefix.pch";
 				INFOPLIST_FILE = "${PROJECT_NAME}/${PROJECT_NAME}-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oborn.OBUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
