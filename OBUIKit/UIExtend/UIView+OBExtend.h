@@ -39,10 +39,19 @@
 /**
  *  截图
  *
- *  @param isOpaque 是否需要保留alpha
+ *  @param isOpaque 是否不透明，YES-不透明 NO-保留透明度
  *
  *  @return 截图后的image
  */
-- (UIImage *)ob_shotcutWithOpaque:(BOOL)isOpaque;
+- (UIImage *)ob_snapshotWithOpaque:(BOOL)isOpaque;
+/**
+ *  View指定区域截图
+ *
+ *  @param isOpaque 是否不透明，YES-不透明 NO-保留透明度
+ *  @param rect     截图区域
+ *
+ *  @return 指定区域截图的image
+ */
+- (UIImage *)ob_snapshotWithOpaque:(BOOL)isOpaque rect:(CGRect)rect;
 
 @end

@@ -43,20 +43,27 @@
     }
 }
 
-- (UIImage *)ob_shotcutWithOpaque:(BOOL)isOpaque {
-    UIImage * shotcutImage = nil;
-    if ([self respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)]) {
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size , isOpaque, [UIScreen mainScreen].scale);
-        [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];
-        shotcutImage = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-    } else {
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size, isOpaque, [UIScreen mainScreen].scale);
-        [self.layer renderInContext:UIGraphicsGetCurrentContext()];
-        shotcutImage = UIGraphicsGetImageFromCurrentImageContext();
+- (UIImage *)ob_snapshotWithOpaque:(BOOL)isOpaque {
+    
+    return [self ob_snapshotWithOpaque:isOpaque rect:self.bounds];
+}
+
+- (UIImage *)ob_snapshotWithOpaque:(BOOL)isOpaque rect:(CGRect)rect {
+    
+    rect.origin.x = -rect.origin.x;
+    rect.origin.y = -rect.origin.y;
+    UIGraphicsBeginImageContextWithOptions(rect.size, isOpaque, [UIScreen mainScreen].scale);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage * snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    if (!CGPointEqualToPoint(rect.origin, CGPointZero)) {
+        UIGraphicsBeginImageContextWithOptions(rect.size, isOpaque, [UIScreen mainScreen].scale);
+        [snapshotImage drawInRect:CGRectMake(rect.origin.x, rect.origin.y,
+                                     self.bounds.size.width, self.bounds.size.height)];
+        snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
     }
-    return shotcutImage;
+    return snapshotImage;
 }
 
 #pragma mark -
