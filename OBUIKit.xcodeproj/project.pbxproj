@@ -28,6 +28,8 @@
 		372E42C51C1585D200FBB3E7 /* OBUIMoudle.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42C41C1585D200FBB3E7 /* OBUIMoudle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		372E42CD1C1587B100FBB3E7 /* OBAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42CB1C1587B100FBB3E7 /* OBAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		372E42CE1C1587B100FBB3E7 /* OBAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42CC1C1587B100FBB3E7 /* OBAlert.m */; };
+		37340F801C1E5EB300F5C057 /* UIImage+OBExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 37340F7E1C1E5EB300F5C057 /* UIImage+OBExtend.h */; };
+		37340F811C1E5EB300F5C057 /* UIImage+OBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 37340F7F1C1E5EB300F5C057 /* UIImage+OBExtend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		372E42C41C1585D200FBB3E7 /* OBUIMoudle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBUIMoudle.h; sourceTree = "<group>"; };
 		372E42CB1C1587B100FBB3E7 /* OBAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAlert.h; sourceTree = "<group>"; };
 		372E42CC1C1587B100FBB3E7 /* OBAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAlert.m; sourceTree = "<group>"; };
+		37340F7E1C1E5EB300F5C057 /* UIImage+OBExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OBExtend.h"; sourceTree = "<group>"; };
+		37340F7F1C1E5EB300F5C057 /* UIImage+OBExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OBExtend.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				372E42A21C15839800FBB3E7 /* UIFont+OBExtend.m */,
 				372E42A31C15839800FBB3E7 /* UIView+OBExtend.h */,
 				372E42A41C15839800FBB3E7 /* UIView+OBExtend.m */,
+				37340F7E1C1E5EB300F5C057 /* UIImage+OBExtend.h */,
+				37340F7F1C1E5EB300F5C057 /* UIImage+OBExtend.m */,
 			);
 			path = UIExtend;
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 				372E42B61C1584FC00FBB3E7 /* OBUIKit-Prefix.pch in Headers */,
 				372E42A51C15839800FBB3E7 /* OBUIExtend.h in Headers */,
 				372E42C21C15859F00FBB3E7 /* RBBLinearInterpolation.h in Headers */,
+				37340F801C1E5EB300F5C057 /* UIImage+OBExtend.h in Headers */,
 				372E42C11C15859F00FBB3E7 /* OBAnimationFunctions.h in Headers */,
 				372E42A61C15839800FBB3E7 /* UIColor+OBExtend.h in Headers */,
 			);
@@ -261,6 +268,7 @@
 				372E42BF1C15859F00FBB3E7 /* OBAnimation.m in Sources */,
 				372E42C31C15859F00FBB3E7 /* RBBLinearInterpolation.m in Sources */,
 				372E42A71C15839800FBB3E7 /* UIColor+OBExtend.m in Sources */,
+				37340F811C1E5EB300F5C057 /* UIImage+OBExtend.m in Sources */,
 				372E42A91C15839800FBB3E7 /* UIFont+OBExtend.m in Sources */,
 				372E42AB1C15839800FBB3E7 /* UIView+OBExtend.m in Sources */,
 				372E42CE1C1587B100FBB3E7 /* OBAlert.m in Sources */,

@@ -1,0 +1,15 @@
+//
+//  UIImage+OBExtend.h
+//  OBUIKit
+//
+//  Created by Oborn.Jung on 12/14/15.
+//  Copyright © 2015 Oborn.Jung. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIImage (OBExtend)
+
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
+
+@end
