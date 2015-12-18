@@ -10,18 +10,21 @@
 
 @implementation UIColor (OBExtend)
 
-+ (UIColor *)colorWithHex:(NSUInteger)hex
++ (UIColor *)colorWithARGB:(NSUInteger)argb
 {
-    NSUInteger a = (hex >> 24) & 0xFF;
-    NSUInteger r = (hex >> 16) & 0xFF;
-    NSUInteger g = (hex >> 8 ) & 0xFF;
-    NSUInteger b = hex & 0xFF;
+    NSUInteger a = (argb >> 24) & 0xFF;
+    NSUInteger r = (argb >> 16) & 0xFF;
+    NSUInteger g = (argb >> 8 ) & 0xFF;
+    NSUInteger b = argb & 0xFF;
     return [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:a / 255.0f];
 }
 
-+ (UIColor *)colorWithRGBA:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(NSInteger)alpha
-{
-    return [self colorWithRed:(red / 255.0f) green:(green / 255.0f) blue:(blue / 255.0f) alpha:(alpha / 255.0f)];
++ (UIColor *)colorWithRGB:(NSUInteger)rgb alpha:(CGFloat)alpha {
+    NSUInteger r = (rgb >> 16) & 0xFF;
+    NSUInteger g = (rgb >> 8 ) & 0xFF;
+    NSUInteger b = rgb & 0xFF;
+    return [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:alpha];
+
 }
 
 @end

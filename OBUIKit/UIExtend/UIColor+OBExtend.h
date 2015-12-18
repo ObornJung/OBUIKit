@@ -10,8 +10,8 @@
 
 @interface UIColor (OBExtend)
 
-+ (UIColor *)colorWithHex:(NSUInteger)hex;
++ (UIColor *)colorWithARGB:(NSUInteger)argb;
 
-+ (UIColor *)colorWithRGBA:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(NSInteger)alpha;
++ (UIColor *)colorWithRGB:(NSUInteger)rgb alpha:(CGFloat)alpha;
 
 @end
