@@ -10,7 +10,12 @@
 
 @implementation UIColor (OBExtend)
 
-+ (UIColor *)colorWithARGB:(NSUInteger)argb
++ (UIColor *)ob_colorWithRGB:(NSUInteger)rgb
+{
+    return [UIColor ob_colorWithRGB:rgb alpha:1.0f];;
+}
+
++ (UIColor *)ob_colorWithARGB:(NSUInteger)argb
 {
     NSUInteger a = (argb >> 24) & 0xFF;
     NSUInteger r = (argb >> 16) & 0xFF;
@@ -19,7 +24,7 @@
     return [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:a / 255.0f];
 }
 
-+ (UIColor *)colorWithRGB:(NSUInteger)rgb alpha:(CGFloat)alpha {
++ (UIColor *)ob_colorWithRGB:(NSUInteger)rgb alpha:(CGFloat)alpha {
     NSUInteger r = (rgb >> 16) & 0xFF;
     NSUInteger g = (rgb >> 8 ) & 0xFF;
     NSUInteger b = rgb & 0xFF;

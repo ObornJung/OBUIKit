@@ -11,6 +11,7 @@
 
 #import "UIView+OBExtend.h"
 #import "UIFont+OBExtend.h"
+#import "UIImage+OBExtend.h"
 #import "UIColor+OBExtend.h"
 
 #endif /* OBUIExtend_h */

@@ -10,8 +10,10 @@
 
 @interface UIColor (OBExtend)
 
-+ (UIColor *)colorWithARGB:(NSUInteger)argb;
++ (UIColor *)ob_colorWithRGB:(NSUInteger)rgb;
 
-+ (UIColor *)colorWithRGB:(NSUInteger)rgb alpha:(CGFloat)alpha;
++ (UIColor *)ob_colorWithARGB:(NSUInteger)argb;
+
++ (UIColor *)ob_colorWithRGB:(NSUInteger)rgb alpha:(CGFloat)alpha;
 
 @end

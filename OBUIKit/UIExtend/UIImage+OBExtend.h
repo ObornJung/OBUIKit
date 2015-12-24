@@ -10,6 +10,6 @@
 
 @interface UIImage (OBExtend)
 
-+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
++ (UIImage *)ob_imageWithColor:(UIColor *)color size:(CGSize)size;
 
 @end

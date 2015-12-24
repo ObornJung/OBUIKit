@@ -17,7 +17,7 @@
 		372E42AB1C15839800FBB3E7 /* UIView+OBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42A41C15839800FBB3E7 /* UIView+OBExtend.m */; };
 		372E42B11C15849900FBB3E7 /* UIView+OBToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42AF1C15849900FBB3E7 /* UIView+OBToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		372E42B21C15849900FBB3E7 /* UIView+OBToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42B01C15849900FBB3E7 /* UIView+OBToast.m */; };
-		372E42B41C1584DA00FBB3E7 /* OBDebugMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42B31C1584DA00FBB3E7 /* OBDebugMacro.h */; };
+		372E42B41C1584DA00FBB3E7 /* OBDebugMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42B31C1584DA00FBB3E7 /* OBDebugMacro.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		372E42B61C1584FC00FBB3E7 /* OBUIKit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 372E42B51C1584FC00FBB3E7 /* OBUIKit-Prefix.pch */; };
 		372E42BE1C15859F00FBB3E7 /* OBAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42B81C15859F00FBB3E7 /* OBAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		372E42BF1C15859F00FBB3E7 /* OBAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42B91C15859F00FBB3E7 /* OBAnimation.m */; };

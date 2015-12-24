@@ -10,7 +10,7 @@
 
 @implementation UIImage (OBExtend)
 
-+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {
++ (UIImage *)ob_imageWithColor:(UIColor *)color size:(CGSize)size {
     UIGraphicsBeginImageContext(size);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(ctx, color.CGColor);
