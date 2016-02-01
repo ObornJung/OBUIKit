@@ -132,6 +132,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "Masonry", "~> 0.6.4"
+  # s.dependency "OBFoundationLib", :path => "~/Documents/个人资料/iOS/own project/OBFoundationLib"
 
 end
