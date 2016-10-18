@@ -16,12 +16,6 @@
 		372E42AA1C15839800FBB3E7 /* UIView+OBExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42A31C15839800FBB3E7 /* UIView+OBExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		372E42AB1C15839800FBB3E7 /* UIView+OBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42A41C15839800FBB3E7 /* UIView+OBExtend.m */; };
 		372E42B61C1584FC00FBB3E7 /* OBUIKit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 372E42B51C1584FC00FBB3E7 /* OBUIKit-Prefix.pch */; };
-		372E42BE1C15859F00FBB3E7 /* OBAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42B81C15859F00FBB3E7 /* OBAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		372E42BF1C15859F00FBB3E7 /* OBAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42B91C15859F00FBB3E7 /* OBAnimation.m */; };
-		372E42C01C15859F00FBB3E7 /* OBAnimationFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 372E42BA1C15859F00FBB3E7 /* OBAnimationFunctions.c */; };
-		372E42C11C15859F00FBB3E7 /* OBAnimationFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42BB1C15859F00FBB3E7 /* OBAnimationFunctions.h */; };
-		372E42C21C15859F00FBB3E7 /* RBBLinearInterpolation.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42BC1C15859F00FBB3E7 /* RBBLinearInterpolation.h */; };
-		372E42C31C15859F00FBB3E7 /* RBBLinearInterpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42BD1C15859F00FBB3E7 /* RBBLinearInterpolation.m */; };
 		372E42C51C1585D200FBB3E7 /* OBUIMoudle.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42C41C1585D200FBB3E7 /* OBUIMoudle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		372E42CD1C1587B100FBB3E7 /* OBAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42CB1C1587B100FBB3E7 /* OBAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		372E42CE1C1587B100FBB3E7 /* OBAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42CC1C1587B100FBB3E7 /* OBAlert.m */; };
@@ -43,12 +37,6 @@
 		372E42A31C15839800FBB3E7 /* UIView+OBExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+OBExtend.h"; sourceTree = "<group>"; };
 		372E42A41C15839800FBB3E7 /* UIView+OBExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OBExtend.m"; sourceTree = "<group>"; };
 		372E42B51C1584FC00FBB3E7 /* OBUIKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OBUIKit-Prefix.pch"; sourceTree = "<group>"; };
-		372E42B81C15859F00FBB3E7 /* OBAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAnimation.h; sourceTree = "<group>"; };
-		372E42B91C15859F00FBB3E7 /* OBAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAnimation.m; sourceTree = "<group>"; };
-		372E42BA1C15859F00FBB3E7 /* OBAnimationFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OBAnimationFunctions.c; sourceTree = "<group>"; };
-		372E42BB1C15859F00FBB3E7 /* OBAnimationFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAnimationFunctions.h; sourceTree = "<group>"; };
-		372E42BC1C15859F00FBB3E7 /* RBBLinearInterpolation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBLinearInterpolation.h; sourceTree = "<group>"; };
-		372E42BD1C15859F00FBB3E7 /* RBBLinearInterpolation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBLinearInterpolation.m; sourceTree = "<group>"; };
 		372E42C41C1585D200FBB3E7 /* OBUIMoudle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBUIMoudle.h; sourceTree = "<group>"; };
 		372E42CB1C1587B100FBB3E7 /* OBAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAlert.h; sourceTree = "<group>"; };
 		372E42CC1C1587B100FBB3E7 /* OBAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAlert.m; sourceTree = "<group>"; };
@@ -127,22 +115,8 @@
 				372E42C41C1585D200FBB3E7 /* OBUIMoudle.h */,
 				3745AD5D1DB5F3B3008758C3 /* Line */,
 				372E42C61C15879200FBB3E7 /* Alert */,
-				372E42B71C15858D00FBB3E7 /* Animation */,
 			);
 			path = Moudle;
-			sourceTree = "<group>";
-		};
-		372E42B71C15858D00FBB3E7 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-				372E42B81C15859F00FBB3E7 /* OBAnimation.h */,
-				372E42B91C15859F00FBB3E7 /* OBAnimation.m */,
-				372E42BA1C15859F00FBB3E7 /* OBAnimationFunctions.c */,
-				372E42BB1C15859F00FBB3E7 /* OBAnimationFunctions.h */,
-				372E42BC1C15859F00FBB3E7 /* RBBLinearInterpolation.h */,
-				372E42BD1C15859F00FBB3E7 /* RBBLinearInterpolation.m */,
-			);
-			path = Animation;
 			sourceTree = "<group>";
 		};
 		372E42C61C15879200FBB3E7 /* Alert */ = {
@@ -172,16 +146,13 @@
 			files = (
 				372E42A81C15839800FBB3E7 /* UIFont+OBExtend.h in Headers */,
 				372E42CD1C1587B100FBB3E7 /* OBAlert.h in Headers */,
-				372E42BE1C15859F00FBB3E7 /* OBAnimation.h in Headers */,
 				372E42C51C1585D200FBB3E7 /* OBUIMoudle.h in Headers */,
 				372E42AA1C15839800FBB3E7 /* UIView+OBExtend.h in Headers */,
 				372E42951C15827600FBB3E7 /* OBUIKit.h in Headers */,
 				372E42B61C1584FC00FBB3E7 /* OBUIKit-Prefix.pch in Headers */,
 				3745AD601DB5F3C4008758C3 /* OBLine.h in Headers */,
 				372E42A51C15839800FBB3E7 /* OBUIExtend.h in Headers */,
-				372E42C21C15859F00FBB3E7 /* RBBLinearInterpolation.h in Headers */,
 				37340F801C1E5EB300F5C057 /* UIImage+OBExtend.h in Headers */,
-				372E42C11C15859F00FBB3E7 /* OBAnimationFunctions.h in Headers */,
 				372E42A61C15839800FBB3E7 /* UIColor+OBExtend.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,15 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				372E42BF1C15859F00FBB3E7 /* OBAnimation.m in Sources */,
-				372E42C31C15859F00FBB3E7 /* RBBLinearInterpolation.m in Sources */,
 				3745AD611DB5F3C4008758C3 /* OBLine.m in Sources */,
 				372E42A71C15839800FBB3E7 /* UIColor+OBExtend.m in Sources */,
 				37340F811C1E5EB300F5C057 /* UIImage+OBExtend.m in Sources */,
 				372E42A91C15839800FBB3E7 /* UIFont+OBExtend.m in Sources */,
 				372E42AB1C15839800FBB3E7 /* UIView+OBExtend.m in Sources */,
 				372E42CE1C1587B100FBB3E7 /* OBAlert.m in Sources */,
-				372E42C01C15859F00FBB3E7 /* OBAnimationFunctions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
