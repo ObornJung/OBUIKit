@@ -9,6 +9,5 @@
 #ifdef __OBJC__
 
 #import "OBUIExtend.h"
-#import "OBDebugMacro.h"
 
 #endif

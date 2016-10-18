@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Oborn.Jung. All rights reserved.
 //
 
+#import <objc/runtime.h>
 #import "UIView+OBExtend.h"
 
 @implementation UIView (OBExtend)
@@ -36,10 +37,34 @@
     return nil;
 }
 
+- (nullable UIView *)ob_subviewWithClass:(Class)targetClass {
+    for (UIView * subview in self.subviews) {
+        if ([subview isKindOfClass:targetClass]) {
+            return subview;
+        }
+    }
+    for (UIView * subview in self.subviews) {
+        UIView * targetView = [subview ob_subviewWithClass:targetClass];
+        if (targetView) {
+            return targetView;
+        }
+    }
+    return nil;
+}
+
 - (void)ob_removeAllSubviews {
     while (self.subviews.count) {
         UIView * view = self.subviews.lastObject;
         [view removeFromSuperview];
+    }
+}
+
+- (void)ob_removeAllAutoLayout {
+    [self removeConstraints:self.constraints];
+    for (NSLayoutConstraint * constraint in self.superview.constraints) {
+        if ([constraint.firstItem isEqual:self]) {
+            [self.superview removeConstraint:constraint];
+        }
     }
 }
 
@@ -50,20 +75,19 @@
 
 - (UIImage *)ob_snapshotWithOpaque:(BOOL)isOpaque rect:(CGRect)rect {
     
-    rect.origin.x = -rect.origin.x;
-    rect.origin.y = -rect.origin.y;
     UIGraphicsBeginImageContextWithOptions(rect.size, isOpaque, [UIScreen mainScreen].scale);
     [self.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage * snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     if (!CGPointEqualToPoint(rect.origin, CGPointZero)) {
+        rect.origin.x = -rect.origin.x; rect.origin.y = -rect.origin.y;
         UIGraphicsBeginImageContextWithOptions(rect.size, isOpaque, [UIScreen mainScreen].scale);
-        [snapshotImage drawInRect:CGRectMake(rect.origin.x, rect.origin.y,
-                                     self.bounds.size.width, self.bounds.size.height)];
-        snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+        CGRect drawRect = {rect.origin, image.size};
+        [image drawInRect:drawRect];
+        image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
     }
-    return snapshotImage;
+    return image;
 }
 
 #pragma mark -

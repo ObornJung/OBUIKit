@@ -10,9 +10,5 @@
 #define OBUIMoudle_h
 
 #import "OBLine.h"
-#import "OBAlert.h"
-#import "OBAnimation.h"
-#import "UIView+OBToast.h"
-#import "OBBaseTableView.h"
 
 #endif /* OBUIMoudle_h */

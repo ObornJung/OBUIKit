@@ -15,9 +15,6 @@
 		372E42A91C15839800FBB3E7 /* UIFont+OBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42A21C15839800FBB3E7 /* UIFont+OBExtend.m */; };
 		372E42AA1C15839800FBB3E7 /* UIView+OBExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42A31C15839800FBB3E7 /* UIView+OBExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		372E42AB1C15839800FBB3E7 /* UIView+OBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42A41C15839800FBB3E7 /* UIView+OBExtend.m */; };
-		372E42B11C15849900FBB3E7 /* UIView+OBToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42AF1C15849900FBB3E7 /* UIView+OBToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		372E42B21C15849900FBB3E7 /* UIView+OBToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42B01C15849900FBB3E7 /* UIView+OBToast.m */; };
-		372E42B41C1584DA00FBB3E7 /* OBDebugMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42B31C1584DA00FBB3E7 /* OBDebugMacro.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		372E42B61C1584FC00FBB3E7 /* OBUIKit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 372E42B51C1584FC00FBB3E7 /* OBUIKit-Prefix.pch */; };
 		372E42BE1C15859F00FBB3E7 /* OBAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 372E42B81C15859F00FBB3E7 /* OBAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		372E42BF1C15859F00FBB3E7 /* OBAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42B91C15859F00FBB3E7 /* OBAnimation.m */; };
@@ -30,6 +27,8 @@
 		372E42CE1C1587B100FBB3E7 /* OBAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 372E42CC1C1587B100FBB3E7 /* OBAlert.m */; };
 		37340F801C1E5EB300F5C057 /* UIImage+OBExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 37340F7E1C1E5EB300F5C057 /* UIImage+OBExtend.h */; };
 		37340F811C1E5EB300F5C057 /* UIImage+OBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 37340F7F1C1E5EB300F5C057 /* UIImage+OBExtend.m */; };
+		3745AD601DB5F3C4008758C3 /* OBLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3745AD5E1DB5F3C4008758C3 /* OBLine.h */; };
+		3745AD611DB5F3C4008758C3 /* OBLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3745AD5F1DB5F3C4008758C3 /* OBLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +42,6 @@
 		372E42A21C15839800FBB3E7 /* UIFont+OBExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+OBExtend.m"; sourceTree = "<group>"; };
 		372E42A31C15839800FBB3E7 /* UIView+OBExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+OBExtend.h"; sourceTree = "<group>"; };
 		372E42A41C15839800FBB3E7 /* UIView+OBExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OBExtend.m"; sourceTree = "<group>"; };
-		372E42AF1C15849900FBB3E7 /* UIView+OBToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+OBToast.h"; sourceTree = "<group>"; };
-		372E42B01C15849900FBB3E7 /* UIView+OBToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OBToast.m"; sourceTree = "<group>"; };
-		372E42B31C1584DA00FBB3E7 /* OBDebugMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBDebugMacro.h; sourceTree = "<group>"; };
 		372E42B51C1584FC00FBB3E7 /* OBUIKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OBUIKit-Prefix.pch"; sourceTree = "<group>"; };
 		372E42B81C15859F00FBB3E7 /* OBAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAnimation.h; sourceTree = "<group>"; };
 		372E42B91C15859F00FBB3E7 /* OBAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAnimation.m; sourceTree = "<group>"; };
@@ -58,6 +54,8 @@
 		372E42CC1C1587B100FBB3E7 /* OBAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAlert.m; sourceTree = "<group>"; };
 		37340F7E1C1E5EB300F5C057 /* UIImage+OBExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OBExtend.h"; sourceTree = "<group>"; };
 		37340F7F1C1E5EB300F5C057 /* UIImage+OBExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OBExtend.m"; sourceTree = "<group>"; };
+		3745AD5E1DB5F3C4008758C3 /* OBLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBLine.h; sourceTree = "<group>"; };
+		3745AD5F1DB5F3C4008758C3 /* OBLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBLine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +88,6 @@
 		372E42931C15827600FBB3E7 /* OBUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				372E42AD1C15845A00FBB3E7 /* Macro */,
 				372E42AC1C15841B00FBB3E7 /* Moudle */,
 				372E429D1C15837C00FBB3E7 /* UIExtend */,
 				372E429C1C15835500FBB3E7 /* Supporting Files */,
@@ -128,28 +125,11 @@
 			isa = PBXGroup;
 			children = (
 				372E42C41C1585D200FBB3E7 /* OBUIMoudle.h */,
+				3745AD5D1DB5F3B3008758C3 /* Line */,
 				372E42C61C15879200FBB3E7 /* Alert */,
-				372E42AE1C15848D00FBB3E7 /* Toast */,
 				372E42B71C15858D00FBB3E7 /* Animation */,
 			);
 			path = Moudle;
-			sourceTree = "<group>";
-		};
-		372E42AD1C15845A00FBB3E7 /* Macro */ = {
-			isa = PBXGroup;
-			children = (
-				372E42B31C1584DA00FBB3E7 /* OBDebugMacro.h */,
-			);
-			path = Macro;
-			sourceTree = "<group>";
-		};
-		372E42AE1C15848D00FBB3E7 /* Toast */ = {
-			isa = PBXGroup;
-			children = (
-				372E42AF1C15849900FBB3E7 /* UIView+OBToast.h */,
-				372E42B01C15849900FBB3E7 /* UIView+OBToast.m */,
-			);
-			path = Toast;
 			sourceTree = "<group>";
 		};
 		372E42B71C15858D00FBB3E7 /* Animation */ = {
@@ -174,6 +154,15 @@
 			path = Alert;
 			sourceTree = "<group>";
 		};
+		3745AD5D1DB5F3B3008758C3 /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				3745AD5E1DB5F3C4008758C3 /* OBLine.h */,
+				3745AD5F1DB5F3C4008758C3 /* OBLine.m */,
+			);
+			path = Line;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -183,13 +172,12 @@
 			files = (
 				372E42A81C15839800FBB3E7 /* UIFont+OBExtend.h in Headers */,
 				372E42CD1C1587B100FBB3E7 /* OBAlert.h in Headers */,
-				372E42B41C1584DA00FBB3E7 /* OBDebugMacro.h in Headers */,
 				372E42BE1C15859F00FBB3E7 /* OBAnimation.h in Headers */,
 				372E42C51C1585D200FBB3E7 /* OBUIMoudle.h in Headers */,
 				372E42AA1C15839800FBB3E7 /* UIView+OBExtend.h in Headers */,
-				372E42B11C15849900FBB3E7 /* UIView+OBToast.h in Headers */,
 				372E42951C15827600FBB3E7 /* OBUIKit.h in Headers */,
 				372E42B61C1584FC00FBB3E7 /* OBUIKit-Prefix.pch in Headers */,
+				3745AD601DB5F3C4008758C3 /* OBLine.h in Headers */,
 				372E42A51C15839800FBB3E7 /* OBUIExtend.h in Headers */,
 				372E42C21C15859F00FBB3E7 /* RBBLinearInterpolation.h in Headers */,
 				37340F801C1E5EB300F5C057 /* UIImage+OBExtend.h in Headers */,
@@ -225,7 +213,7 @@
 		372E42881C15827500FBB3E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Oborn.Jung;
 				TargetAttributes = {
 					372E42901C15827500FBB3E7 = {
@@ -267,12 +255,12 @@
 			files = (
 				372E42BF1C15859F00FBB3E7 /* OBAnimation.m in Sources */,
 				372E42C31C15859F00FBB3E7 /* RBBLinearInterpolation.m in Sources */,
+				3745AD611DB5F3C4008758C3 /* OBLine.m in Sources */,
 				372E42A71C15839800FBB3E7 /* UIColor+OBExtend.m in Sources */,
 				37340F811C1E5EB300F5C057 /* UIImage+OBExtend.m in Sources */,
 				372E42A91C15839800FBB3E7 /* UIFont+OBExtend.m in Sources */,
 				372E42AB1C15839800FBB3E7 /* UIView+OBExtend.m in Sources */,
 				372E42CE1C1587B100FBB3E7 /* OBAlert.m in Sources */,
-				372E42B21C15849900FBB3E7 /* UIView+OBToast.m in Sources */,
 				372E42C01C15859F00FBB3E7 /* OBAnimationFunctions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,8 +281,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -340,8 +330,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -371,6 +363,7 @@
 		372E429A1C15827600FBB3E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -391,6 +384,7 @@
 		372E429B1C15827600FBB3E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

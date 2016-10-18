@@ -15,26 +15,38 @@
  *
  *  @return keyView
  */
-+ (UIView *)ob_keyView;
++ (nullable UIView *)ob_keyView;
 
 /**
  *  获取view第一响应的viewController
  *
  *  @return view第一响应的viewController
  */
--(UIViewController *)ob_viewController;
+-(nullable UIViewController *)ob_viewController;
 
 /**
- *  删除所有的subview
+ *  remove all subview
  */
 - (void)ob_removeAllSubviews;
+
+/**
+ *  remove all constraints
+ */
+- (void)ob_removeAllAutoLayout;
 
 /**
  *  循环打印View视图树中所有的View
  *
  *  @return 返回循环打印的字符串
  */
-- (NSString *)ob_recursiveDiscription;
+- (nonnull NSString *)ob_recursiveDiscription;
+
+/**
+ *  find first view of target class in self's subviews
+ *
+ *  @return target class view
+ */
+- (nullable UIView *)ob_subviewWithClass:(nonnull Class)targetClass;
 
 /**
  *  截图
@@ -43,7 +55,8 @@
  *
  *  @return 截图后的image
  */
-- (UIImage *)ob_snapshotWithOpaque:(BOOL)isOpaque;
+- (nullable UIImage *)ob_snapshotWithOpaque:(BOOL)isOpaque;
+
 /**
  *  View指定区域截图
  *
@@ -52,6 +65,6 @@
  *
  *  @return 指定区域截图的image
  */
-- (UIImage *)ob_snapshotWithOpaque:(BOOL)isOpaque rect:(CGRect)rect;
+- (nullable UIImage *)ob_snapshotWithOpaque:(BOOL)isOpaque rect:(CGRect)rect;
 
 @end
