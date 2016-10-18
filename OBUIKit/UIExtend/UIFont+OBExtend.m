@@ -3,7 +3,7 @@
 //  OBFoundationLib
 //
 //  Created by Oborn.Jung on 12/4/15.
-//  Copyright © 2015 ObornJung. All rights reserved.
+//  Copyright © 2015 ATG. All rights reserved.
 //
 
 #import "UIFont+OBExtend.h"

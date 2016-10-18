@@ -1,12 +1,12 @@
 //
 //  UITableView+AccommodateKeyboard.m
-//  TBBuy
+//  OBUIKit
 //
-//  Created by XueCheng on 4/10/15.
-//  Copyright (c) 2015 christ.yuj. All rights reserved.
+//  Created by Oborn.Jung on 4/10/15.
+//  Copyright (c) 2015 ATG. All rights reserved.
 //
 
-#import "OBDebugMacro.h"
+#import "OBMacro.h"
 #import "UITableView+OBAccommodateKeyboard.h"
 
 @implementation UITableView (OBAccommodateKeyboard)
@@ -14,10 +14,8 @@
 - (void)ob_setAccommodateKeyboard:(BOOL)accommodate {
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     if (accommodate) {
-        [notificationCenter addObserver:self selector:@selector(ob_handleKeyboardWillShow:)
-                                   name:UIKeyboardWillShowNotification object:nil];
-        [notificationCenter addObserver:self selector:@selector(ob_handleKeyboardWillHide:)
-                                   name:UIKeyboardWillHideNotification object:nil];
+        [notificationCenter addObserver:self selector:@selector(ob_handleKeyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+        [notificationCenter addObserver:self selector:@selector(ob_handleKeyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     } else {
         [notificationCenter removeObserver:self name:UIKeyboardWillShowNotification object:nil];
         [notificationCenter removeObserver:self name:UIKeyboardWillHideNotification object:nil];
@@ -34,7 +32,7 @@
     self.contentInset = contentInsets;
     self.scrollIndicatorInsets = contentInsets;
     
-    if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
+    if (OBSYSTEM_VERSION_LESS_THAN(@"7.0")) {
         [self ob_scrollToActiveCell];
     }
 }

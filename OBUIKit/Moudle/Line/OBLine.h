@@ -3,7 +3,7 @@
 //  OBUIKit
 //
 //  Created by Oborn.Jung on 15/10/27.
-//  Copyright © 2015年 Oborn.Jung. All rights reserved.
+//  Copyright © 2015年 ATG. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

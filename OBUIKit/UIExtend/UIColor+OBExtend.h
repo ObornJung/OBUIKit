@@ -3,7 +3,7 @@
 //  OBBaseUIKit
 //
 //  Created by Oborn.Jung on 11/3/14.
-//  Copyright (c) 2014 Oborn.Jung. All rights reserved.
+//  Copyright (c) 2014 ATG. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
