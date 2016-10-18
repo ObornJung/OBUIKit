@@ -13,16 +13,16 @@
 
 + (void)ob_printAllSystemFont {
     
-    OBSLog(@"|||||||||||||||||||||||||System font start|||||||||||||||||||||||||");
+    NSLog(@"|||||||||||||||||||||||||System font start|||||||||||||||||||||||||");
     NSArray<NSString *> * familyNames = [UIFont familyNames];
     for (NSString * familyName in familyNames) {
-        OBSLog(@"%@", familyName);
+        NSLog(@"%@", familyName);
         NSArray<NSString *> * fontNames = [UIFont fontNamesForFamilyName:familyName];
         for (NSString * fontName in fontNames) {
-            OBSLog(@"  - %@", fontName);
+            NSLog(@"  - %@", fontName);
         }
     }
-    OBSLog(@"|||||||||||||||||||||||||System font end|||||||||||||||||||||||||");
+    NSLog(@"|||||||||||||||||||||||||System font end|||||||||||||||||||||||||");
 }
 
 @end

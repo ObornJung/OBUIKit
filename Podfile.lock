@@ -6,24 +6,14 @@ PODS:
   - OBFoundationLib/Macro (1.0.0)
   - OBFoundationLib/Moudle (1.0.0):
     - OBFoundationLib/Macro
+    - OBFoundationLib/SystemExtend
   - OBFoundationLib/SystemExtend (1.0.0):
     - OBFoundationLib/Macro
 
 DEPENDENCIES:
-  - OBFoundationLib (from `https://github.com/ObornJung/OBFoundationLib.git`, branch
-    `develop`)
-
-EXTERNAL SOURCES:
-  OBFoundationLib:
-    :branch: develop
-    :git: https://github.com/ObornJung/OBFoundationLib.git
-
-CHECKOUT OPTIONS:
-  OBFoundationLib:
-    :commit: 00198a9dd32dca23ad0d3289ef874bf1a7f10653
-    :git: https://github.com/ObornJung/OBFoundationLib.git
+  - OBFoundationLib (~> 1.0.0)
 
 SPEC CHECKSUMS:
-  OBFoundationLib: 23eb680e2146ef0a6da95d38693477135a55e2d8
+  OBFoundationLib: 0b87ca891fc1a55166dae914d120ce076acb0313
 
 COCOAPODS: 0.39.0

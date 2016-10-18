@@ -7,6 +7,6 @@ source "https://github.com/CocoaPods/Specs.git"
 
 target 'OBUIKit' do
 
-    pod 'OBFoundationLib',			:git => 'https://github.com/ObornJung/OBFoundationLib.git', :branch => 'develop'
+    pod 'OBFoundationLib', '~> 1.0.0'
 
 end
