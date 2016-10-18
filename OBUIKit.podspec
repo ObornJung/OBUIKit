@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
     s.public_header_files = 'OBUIKit/*.h'
 
     s.subspec 'Moudle' do |ss|
+        ss.dependency 'OBUIKit/UIExtend'
         ss.source_files = 'OBUIKit/Moudle/**/*.{m,h}'
         ss.public_header_files = 'OBUIKit/Moudle/**/*.h'
     end
@@ -32,5 +33,6 @@ Pod::Spec.new do |s|
 
     s.requires_arc = true
     s.frameworks   = "Foundation", "UIKit"
+    s.dependency 'OBFoundationLib'
 
 end

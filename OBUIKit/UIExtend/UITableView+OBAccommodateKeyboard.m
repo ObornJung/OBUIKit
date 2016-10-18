@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 ATG. All rights reserved.
 //
 
-#import "OBMacro.h"
+#import <OBFoundationLib/OBFoundationLib.h>
 #import "UITableView+OBAccommodateKeyboard.h"
 
 @implementation UITableView (OBAccommodateKeyboard)
