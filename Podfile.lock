@@ -11,7 +11,7 @@ PODS:
     - OBFoundationLib/Macro
 
 DEPENDENCIES:
-  - OBFoundationLib (~> 1.0.0)
+  - OBFoundationLib
 
 SPEC CHECKSUMS:
   OBFoundationLib: 0b87ca891fc1a55166dae914d120ce076acb0313
