@@ -10,6 +10,11 @@
 
 @interface UIColor (OBExtend)
 
+/**
+ * Color from string, string format: #AARRGGBB or #RRGGBB(AA default FF)
+ */
++ (UIColor *)ob_colorWithString:(NSString *)colorStr;
+
 + (UIColor *)ob_colorWithRGB:(NSUInteger)rgb;
 
 + (UIColor *)ob_colorWithARGB:(NSUInteger)argb;

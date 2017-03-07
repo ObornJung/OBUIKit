@@ -10,6 +10,23 @@
 
 @implementation UIColor (OBExtend)
 
++ (UIColor *)ob_colorWithString:(NSString *)colorStr {
+    if ([colorStr hasPrefix:@"#"]) {
+        unsigned colorValue = 0;
+        NSScanner * scanner = [NSScanner scannerWithString:colorStr];
+        [scanner setScanLocation:1]; [scanner scanHexInt:&colorValue];
+        if (colorStr.length > 9) {
+            return nil;
+        } else if (colorStr.length > 7) {
+            return [self ob_colorWithARGB:colorValue];
+        } else {
+            return [self ob_colorWithRGB:colorValue];
+        }
+    } else {
+        return nil;
+    }
+}
+
 + (UIColor *)ob_colorWithRGB:(NSUInteger)rgb {
     return [UIColor ob_colorWithRGB:rgb alpha:1.0f];;
 }
