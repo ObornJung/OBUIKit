@@ -7,6 +7,6 @@ source "https://github.com/CocoaPods/Specs.git"
 
 target 'OBUIKit' do
 
-    pod 'OBFoundationLib'
+    pod 'OBFoundationLib', '~> 1.0.1'
 
 end
